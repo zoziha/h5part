@@ -1,0 +1,11 @@
+name = "h5part-c"
+version = "1.0.0"
+maintainer = "左志华(zuo.zhihua@qq.com)"
+license = "BSD-3-Clause"
+
+[library]
+include-dir = ["include"]
+
+[[example]]
+name = "demo"
+main = "demo.c"

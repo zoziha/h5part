@@ -1,0 +1,10 @@
+name = "h5part"
+version = "1.0.0"
+author = ["左志华"]
+license = "BSD-3-Clause"
+
+[dependencies]
+h5part-c = { path = "h5part" }
+
+[dev-dependencies]
+test-drive = { git = "https://gitee.com/fortran-base/test-drive", tag = "v0.4.0" }
