@@ -24,7 +24,7 @@ h5part_lib = library(
     src,
     include_directories : h5part_inc,
     dependencies : [
-        dependency('hdf5', language : 'c'),
+        dependency('hdf5', language : 'c', version : '>= 1.10.6'),
     ],
     version : meson.project_version(),
     install : true,
