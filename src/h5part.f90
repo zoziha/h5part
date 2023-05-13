@@ -3,9 +3,12 @@
 !>
 !> H5PART for Fortran
 !> H5PART Fortran 接口
-module h5part_m
+module h5part
 
     implicit none
+
+    public :: h5pt_writedata, h5pt_readdata, h5pt_writefileattrib, h5pt_readfileattrib, &
+              h5pt_writestepattrib, h5pt_readstepattrib
 
     !> Write dataset to timestep
     !> 写入数据集到时间步
@@ -70,4 +73,4 @@ module h5part_m
         include "../h5part/inc/H5PartAttrib.f90"
     end interface
 
-end module h5part_m
+end module h5part

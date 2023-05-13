@@ -1,11 +1,12 @@
-module test_h5part_m
+module test_h5part
 
     use testdrive, only: new_unittest, unittest_type, error_type, check
-    use h5part_m
+    use h5part
     implicit none
-    private
 
+    private
     public :: collect_h5part
+
     character(*), parameter :: test_h5part_file = "test/test.h5part"
 
 contains
@@ -15,14 +16,14 @@ contains
         !> Collection of tests
         type(unittest_type), allocatable, intent(out) :: testsuite(:)
 
-        testsuite = [ &
-                    new_unittest("FUNCTION: h5pt_writedata", test_h5pt_writedata), &
-                    new_unittest("FUNCTION: h5pt_readdata", test_h5pt_readdata) &
-                    ! new_unittest("FUNCTION: h5pt_writefileattrib", test_h5pt_writefileattrib), &
-                    ! new_unittest("FUNCTION: h5pt_readfileatrib", test_h5pt_readfileatrib), &
-                    ! new_unittest("FUNCTION: h5pt_writestepattrib", test_h5pt_writestepattrib), &
-                    ! new_unittest("FUNCTION: h5pt_readstepattrib", test_h5pt_readstepattrib) &
-                    ]
+        allocate (testsuite, source=[ &
+                  new_unittest("FUNCTION: h5pt_writedata", test_h5pt_writedata), &
+                  new_unittest("FUNCTION: h5pt_readdata", test_h5pt_readdata) &
+                  ! new_unittest("FUNCTION: h5pt_writefileattrib", test_h5pt_writefileattrib), &
+                  ! new_unittest("FUNCTION: h5pt_readfileatrib", test_h5pt_readfileatrib), &
+                  ! new_unittest("FUNCTION: h5pt_writestepattrib", test_h5pt_writestepattrib), &
+                  ! new_unittest("FUNCTION: h5pt_readstepattrib", test_h5pt_readstepattrib) &
+                  ])
 
     end subroutine collect_h5part
 
@@ -71,4 +72,4 @@ contains
 
     end subroutine test_h5pt_readdata
 
-end module test_h5part_m
+end module test_h5part
