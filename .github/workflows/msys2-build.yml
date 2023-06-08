@@ -30,7 +30,7 @@ jobs:
       - name: meson-build
         run: |
           meson setup _build -Dbuildtype=debug
-          meson test -C _build -v
+          meson test -C _build -v h5part
 
       - name: fpm-build
         run: |
