@@ -17,8 +17,8 @@ contains
         type(unittest_type), allocatable, intent(out) :: testsuite(:)
 
         allocate (testsuite, source=[ &
-                  new_unittest("FUNCTION: h5pt_writedata", test_h5pt_writedata), &
-                  new_unittest("FUNCTION: h5pt_readdata", test_h5pt_readdata) &
+                  new_unittest("h5pt_writedata", test_h5pt_writedata), &
+                  new_unittest("h5pt_readdata", test_h5pt_readdata) &
                   ! new_unittest("FUNCTION: h5pt_writefileattrib", test_h5pt_writefileattrib), &
                   ! new_unittest("FUNCTION: h5pt_readfileatrib", test_h5pt_readfileatrib), &
                   ! new_unittest("FUNCTION: h5pt_writestepattrib", test_h5pt_writestepattrib), &

@@ -12,7 +12,7 @@ program tester
     stat = 0
 
     allocate(testsuites, source = [ &
-                 new_testsuite("MODULE: h5part", collect_h5part) &
+                 new_testsuite("h5part", collect_h5part) &
                  ])
 
     do is = 1, size(testsuites)

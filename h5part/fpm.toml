@@ -1,10 +1,13 @@
 name = "h5part-c"
 version = "1.0.0"
-maintainer = "左志华(zuo.zhihua@qq.com)"
+maintainer = "ZUO Zhihua(zuo.zhihua@qq.com)"
 license = "BSD-3-Clause"
 
 [library]
 include-dir = ["include"]
+
+[build]
+link = ['hdf5']
 
 [[example]]
 name = "demo"
