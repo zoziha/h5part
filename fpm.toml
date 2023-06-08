@@ -1,6 +1,6 @@
 name = "h5part"
-version = "1.0.0"
-author = ["左志华"]
+version = "1.1.20230513"
+author = "ZUO Zhihua"
 license = "BSD-3-Clause"
 
 [dependencies]

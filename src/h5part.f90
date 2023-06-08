@@ -9,6 +9,7 @@ module h5part
 
     public :: h5pt_writedata, h5pt_readdata, h5pt_writefileattrib, h5pt_readfileattrib, &
               h5pt_writestepattrib, h5pt_readstepattrib
+    public :: h5pt_openr, h5pt_openw, h5pt_close, h5pt_setnpoints, h5pt_setstep
 
     !> Write dataset to timestep
     !> 写入数据集到时间步
