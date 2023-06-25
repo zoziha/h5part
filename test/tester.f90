@@ -2,7 +2,7 @@ program tester
 
     use, intrinsic :: iso_fortran_env, only: error_unit
     use testdrive, only: run_testsuite, new_testsuite, testsuite_type
-    use test_h5part, only: collect_h5part
+    use test_h5part_module, only: collect_h5part
     implicit none
 
     integer :: stat, is

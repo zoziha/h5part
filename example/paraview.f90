@@ -1,34 +1,3 @@
-# H5PART
-
-![h5part](https://img.shields.io/badge/h5part-v1.1.20230513-brightgreen)
-[![license](https://img.shields.io/badge/License-BSD--3-important)](LICENSE-BSD)
-![Language](https://img.shields.io/badge/-Fortran-734f96?logo=fortran&logoColor=white)
-
-H5PART is a structured HDF5 data format that stores multiple time-step data for particle simulation
-scenarios and can be used for ParaView / VisIt visualization.
-
-## Dependencies
-
-- HDF5 >= 1.10.6 .
-
-## Usage
-
-Only FPM and Meson are supported, other build systems can copy source files
-(`./src/*.f90`, `./h5part/inc/*.f90`, `./h5part/src/*.c`) directly,
-and `gfortran` compiler is tested.
-
-````toml
-[dependencies]
-h5part = { git = "https://github.com/zoziha/h5part" }
-````
-
-## Example
-
-```sh
-> fpm run --example --all  # run the example
-```
-
-```fortran
 !> Paraview example
 program main
 
@@ -91,11 +60,3 @@ contains
     end function randn
 
 end program main
-```
-
-After normal run, `example/hv.h5part` will be generated, which can be opened by ParaView.
-
-## Link
-
-- [h5part](https://dav.lbl.gov/archive/Research/AcceleratorSAPP/index.html)
-- [pdlfs/h5part](https://github.com/pdlfs/h5part)

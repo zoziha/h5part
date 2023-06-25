@@ -1,7 +1,7 @@
-module test_h5part
+module test_h5part_module
 
     use testdrive, only: new_unittest, unittest_type, error_type, check
-    use h5part
+    use h5part_module
     implicit none
 
     private
@@ -72,4 +72,4 @@ contains
 
     end subroutine test_h5pt_readdata
 
-end module test_h5part
+end module test_h5part_module

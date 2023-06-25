@@ -3,7 +3,7 @@
 !>
 !> H5PART for Fortran
 !> H5PART Fortran 接口
-module h5part
+module h5part_module
 
     implicit none
 
@@ -74,4 +74,4 @@ module h5part
         include "../h5part/inc/H5PartAttrib.f90"
     end interface
 
-end module h5part
+end module h5part_module

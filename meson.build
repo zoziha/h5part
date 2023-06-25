@@ -81,6 +81,8 @@ pkg.generate(
     subdirs: meson.project_name(),
 )
 
+subdir('example')
+
 testdrive_dep = dependency('test-drive', required: false, method: 'pkg-config')
 if not testdrive_dep.found()
     testdrive_dep = subproject('test-drive').get_variable('testdrive_dep')
