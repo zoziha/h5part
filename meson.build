@@ -1,7 +1,7 @@
 project(
     'h5part',
     'fortran', 'c',
-    version : '1.1.20230513',
+    version : '1.2.20230625',
     license : 'BSD-3-Clause',
     default_options : [
         'buildtype=debugoptimized',

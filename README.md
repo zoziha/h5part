@@ -1,6 +1,6 @@
 # H5PART
 
-![h5part](https://img.shields.io/badge/h5part-v1.1.20230513-brightgreen)
+![h5part](https://img.shields.io/badge/h5part-v1.2.20230625-brightgreen)
 [![license](https://img.shields.io/badge/License-BSD--3-important)](LICENSE-BSD)
 ![Language](https://img.shields.io/badge/-Fortran-734f96?logo=fortran&logoColor=white)
 
